@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./NewColorForm.css";
 
 function NewColorForm({addColor}) {
 
   const [form, updateForm] = useState({name: "", hex:"#ffffff"});
-  const navigate = useNavigate();
+  const history = useHistory();
 
   function handleChange(e) {
     e.persist();
@@ -15,7 +15,7 @@ function NewColorForm({addColor}) {
   function handleSubmit(e) {
     e.preventDefault();
     addColor({ [form.name]: form.hex });
-    navigate("/colors" , {replace : true });
+    history.push("/colors");
   }
 
   const {hex, name} = form;
@@ -43,7 +43,7 @@ function NewColorForm({addColor}) {
             value={hex}
           />
         </div>
-        <input type="Submit" value="Add this color" readOnly />
+        <input type="Submit" value="Add this color" />
       </form>
     </div>
   );

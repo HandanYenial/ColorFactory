@@ -1,13 +1,10 @@
 import React from "react";
-import './App.css';
-
-import ColorRoutes from "./ColorRoutes";
-
+import Routes from "./Routes";
 
 function App() {
   return (
     <div>
-      <ColorRoutes/>
+      <Routes />
     </div>
   );
 }

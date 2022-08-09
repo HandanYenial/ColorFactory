@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ColorList.css";
 
-function ColorList({colors}) {
-  const colorLinks = Object.keys(colors).map(colorName => (
+function ColorList({colors}) { //colors is an object
+  const colorLinks = Object.keys(colors).map(colorName => { // Object.keys(colors) returns an array of the keys in 
+    //the colors object (in this case, the color names)
+    return (
     <li key={colorName}>
       <Link to={`/colors/${colorName}`}>{colorName}</Link>
     </li>
-  ));
+  )
+    });
 
   return (
     <div className="ColorList">
