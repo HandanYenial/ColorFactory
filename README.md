@@ -1,3 +1,23 @@
+Part 2: React Router Color Factory
+The goal of this exercise will be to use React Router to build an app that lets you view colors and add new colors.
+
+User Stories
+As a user, I can go to /colors to see a list of all available colors.
+
+As a user, I can click on one of the colors in my colors list and get taken to a page where I can see that color in all its glory.
+
+(The route here should be /colors/:color )
+
+As a user, I can click on a button to show a form that will let me add a new color.
+
+Note that you can give an input a type of color if you’re trying to select a color. (The route here should be /colors/new)
+
+As a user, when I submit my new color form, I am redirected to the colors index, and my new color appears at the top.
+
+As a user, if I try to navigate to a color page that does not exist (eg, /colors/blargh), I am redirected to the colors index page.
+
+As a user, if I try to navigate to an invalid url (eg, /this-is-not-valid), I am redirected to the colors index page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -45,26 +65,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
